@@ -1,0 +1,80 @@
+body{
+    
+    background:yellow;
+    justify-content: space-evenly;
+}
+h1{
+    display: flex;
+    justify-content: space-evenly;
+    text-justify: distribute;
+}
+.sub-titulo{
+    display: flex;
+    justify-content: space-evenly;
+    text-justify: distribute;
+    width: 80%;
+    margin: auto;
+}
+p{
+    text-align: justify;
+    padding: 40px;
+}
+.titulo-descripcion{
+    justify-content: stretch;
+}
+.cont-cifra-desci{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-evenly;
+}
+.cont-cifrar{
+    border-radius: 10%;
+    background:cadetblue;
+    padding: 10px;
+    border: dashed;
+    margin: 10px;
+}
+.cont-descifrar{
+    border-radius: 10%;
+    background:chocolate;
+    padding: 10px;
+    border: dashed;
+    margin: 10px;
+}
+.container-resultado{
+    display: flex;
+}
+.texto-resultado-cifrado{
+    display: flex;
+    background: cadetblue;
+    width: 90%;
+    word-break: break-all;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: double;
+    padding: 13px;
+}
+.texto-resultado-descifrado{
+    display: flex;
+    background: chocolate;
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: double;
+    padding: 13px;
+}
+.frase-ejemplo{
+    display: flex;
+    background:black;
+    color: blanchedalmond;
+    width: 80%;
+    word-break: break-all;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: double;
+}
