@@ -6,6 +6,10 @@ function handlerInputEncrip() {
     elemento = div.appendChild(elemento);
     elemento.className = "texto-resultado-cifrado";
     elemento.innerHTML = claveEncriptarAscii(frase, clavePosicion);
+    setInterval(()=>{
+        document.getElementById('frase').value = "";
+        document.getElementById('clavePosicion').value = "";
+    },3000);
 }
 function handlerInputDesencrip() {
     let frase = document.getElementById('frase1').value;
@@ -15,6 +19,10 @@ function handlerInputDesencrip() {
     elemento.className = "texto-resultado-descifrado";
     elemento = div.appendChild(elemento);
     elemento.innerHTML = claveDesencriptarAscii(frase, clavePosicion);
+    setInterval(()=>{
+        document.getElementById('frase1').value = "";
+        document.getElementById('clavePosicion1').value = "";
+    },3000);
 }
 //NO ESTA EN USO, es para encriptar con abcedario
 function claveEncriptar(frase, clavePosicion) {

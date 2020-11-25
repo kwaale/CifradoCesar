@@ -37,7 +37,7 @@ p{
 }
 .cont-descifrar{
     border-radius: 10%;
-    background:chocolate;
+    background:dimgrey;
     padding: 10px;
     border: dashed;
     margin: 10px;
@@ -58,7 +58,7 @@ p{
 }
 .texto-resultado-descifrado{
     display: flex;
-    background: chocolate;
+    background: dimgrey;
     width: 90%;
     text-align: justify;
     margin: auto;
