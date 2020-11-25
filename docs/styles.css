@@ -1,7 +1,18 @@
 body{
-    
     background:yellow;
     justify-content: space-evenly;
+}
+.subtitulos2{
+    font-size: unset;
+}
+.instrucciones{
+    background: aliceblue;
+    border: double;
+    border-radius: 18px;
+    padding: 10px;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 24px;
 }
 h1{
     display: flex;
@@ -9,10 +20,9 @@ h1{
     text-justify: distribute;
 }
 .sub-titulo{
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
-    text-justify: distribute;
-    width: 80%;
     margin: auto;
 }
 p{
@@ -22,25 +32,18 @@ p{
 .titulo-descripcion{
     justify-content: stretch;
 }
-.cont-cifra-desci{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: auto;
-    justify-content: space-evenly;
-}
 .cont-cifrar{
-    border-radius: 10%;
-    background:cadetblue;
+    border-radius: 30px;
+    background: cadetblue;
     padding: 10px;
     border: dashed;
-    margin: 10px;
+    width: 80%;
+    margin: auto;
+    font-size: larger;
 }
-.cont-descifrar{
-    border-radius: 10%;
-    background:dimgrey;
-    padding: 10px;
-    border: dashed;
-    margin: 10px;
+#frase{
+    width: 95%;
+    height: 90px;
 }
 .container-resultado{
     display: flex;
@@ -77,4 +80,16 @@ p{
     margin-top: 10px;
     margin-bottom: 10px;
     border: double;
+}
+.btn{
+    padding: 7px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+}
+.btn:hover{
+    color: #1883ba;
+    background-color: #ffffff;
 }
