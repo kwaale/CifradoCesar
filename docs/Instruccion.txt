@@ -1,3 +1,0 @@
-Crear repositorio gitHub
-Se crea un repositorio remoto git "git remote add origin" + link repositorio
-
