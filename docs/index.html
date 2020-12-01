@@ -44,9 +44,12 @@
     <div class="cont-cifrar">
         <h3>Cifrado y/o Descifrado de Mensajes</h3>
         <h4>Frase a cifrar o descifrar: </h4><textarea id="frase" placeholder="Frase aqui..."></textarea>
+        <span id="danger"></span>
         <h4>Clave numérica: </h4><input type="text" id="clavePosicion" placeholder="Clave numerica ..." />
-        <input class="btn" type="button" onclick="handlerInputEncrip()" name="ver" value="Cifrar" />
-        <input class="btn" type="button" onclick="handlerInputDesencrip()" name="ver" value="Descifrar" />
+        <div>
+        <input id = "btn-cifrar" class="btn" type="button" onclick="handlerInputEncrip()" name="ver" value="Cifrar" />
+        <input id = "btn-descifrar" class="btn" type="button" onclick="handlerInputDesencrip()" name="ver" value="Descifrar" />
+    </div>
     </div>
 </body>
 

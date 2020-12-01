@@ -32,6 +32,27 @@ function claveDesencriptarAscii(frase, clavePosicion) {
     frase = frase.map(letra=>String.fromCharCode(letra.charCodeAt() - clavePosicion));
     return frase.join("");
 }
+function listeners(){
+    document.getElementById('frase').addEventListener('input',focus);
+    document.getElementById('clavePosicion').addEventListener('input',()=>focus());
+}
+function focus(){
+    const clave = document.getElementById('clavePosicion');
+    const danger = document.getElementById('danger');
+    if(document.getElementById('frase').value !== "" && clave.value === ""){
+        clave.style.border = "4px solid red";
+        danger.innerHTML = 'Recuerda ingresar la "Clave númerica"';
+        danger.style.color = "red"
+        document.getElementById('btn-cifrar').disabled = true;
+        document.getElementById('btn-descifrar').disabled = true;
+    }else{
+        clave.style.border = "4px solid green";
+        danger.innerHTML = '';
+        document.getElementById('btn-cifrar').disabled = false;
+        document.getElementById('btn-descifrar').disabled = false;
+    }
+}
+window.onload = listeners; //despues que el dom cargue, iniciar la funcion focus.
     //NO ESTA EN USO, es para encriptar con abcedario
     function claveEncriptar(frase, clavePosicion) {
         frase = frase.toUpperCase();
