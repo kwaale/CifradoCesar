@@ -40,9 +40,9 @@ function focus(){
     const clave = document.getElementById('clavePosicion');
     const danger = document.getElementById('danger');
     if(document.getElementById('frase').value !== "" && clave.value === ""){
-        clave.style.border = "4px solid red";
+        clave.style.border = "5px solid red";
         danger.innerHTML = 'Recuerda ingresar la "Clave númerica"';
-        danger.style.color = "red"
+        danger.style.color = "white"
         document.getElementById('btn-cifrar').disabled = true;
         document.getElementById('btn-descifrar').disabled = true;
     }else{
@@ -69,19 +69,4 @@ window.onload = listeners; //despues que el dom cargue, iniciar la funcion focus
         }
         return fraseCript.join("");
     }
-    //NO ESTA EN USO, es para desencriptar con abcedario
-    function claveDesencriptar(frase, clavePosicion) {
-        frase = frase.toUpperCase();
-        let posiciones = [];
-        let fraseCript = [];
-        let abcedario = "A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z".split(" ");
-        abcedario.push(" ");
-        for (let elemento of frase) {
-            posiciones.push(abcedario.indexOf(elemento) - clavePosicion);
-        }
-        for (let posicion of posiciones) {
-            if (posicion < 0) fraseCript.push(abcedario[abcedario.length + posicion]);
-            else fraseCript.push(abcedario[posicion]);
-        }
-        return fraseCript.join("");
-    }
+    

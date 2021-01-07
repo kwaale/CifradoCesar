@@ -1,12 +1,13 @@
 body{
-    background:yellow;
+    background:#80472F;
     justify-content: space-evenly;
 }
 .subtitulos2{
     font-size: unset;
 }
 .instrucciones{
-    background: aliceblue;
+    background: #FB9664;
+    color: black;
     border: double;
     border-radius: 18px;
     padding: 10px;
@@ -31,11 +32,12 @@ p{
 }
 .titulo-descripcion{
     justify-content: stretch;
+    color: blanchedalmond;
 }
 .cont-cifrar{
     border-radius: 30px;
-    background: cadetblue;
-    padding: 10px;
+    background: #FB9664;
+    padding: 15px;
     border: dashed;
     width: 80%;
     margin: auto;
@@ -50,7 +52,8 @@ p{
 }
 .texto-resultado-cifrado{
     display: flex;
-    background: cadetblue;
+    background: #CC470E;
+    color: white;
     width: 90%;
     word-break: break-all;
     margin: auto;
@@ -61,7 +64,8 @@ p{
 }
 .texto-resultado-descifrado{
     display: flex;
-    background: dimgrey;
+    background: #802C09;
+    color: white;
     width: 90%;
     text-align: justify;
     margin: auto;
@@ -72,8 +76,8 @@ p{
 }
 .frase-ejemplo{
     display: flex;
-    background:black;
-    color: blanchedalmond;
+    background:blanchedalmond;
+    color: black;
     width: 80%;
     word-break: break-all;
     margin: auto;
@@ -86,10 +90,21 @@ p{
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
-    background-color: #1883ba;
+    background-color: #FA6419;
     border-radius: 6px;
 }
 .btn:hover{
-    color: #1883ba;
+    color: #FA6419;
     background-color: #ffffff;
+}
+#frase{
+    background:blanchedalmond;
+    border-radius: 15px;
+    padding: 10px;
+}
+#clavePosicion{
+    background:blanchedalmond;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
