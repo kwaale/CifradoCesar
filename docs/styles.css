@@ -4,13 +4,14 @@ body{
 }
 .subtitulos2{
     font-size: unset;
+    text-align: justify;
 }
 .instrucciones{
     background: #FB9664;
     color: black;
     border: double;
     border-radius: 18px;
-    padding: 10px;
+    padding: 30px;
     width: 55%;
     margin: auto;
     margin-bottom: 24px;
@@ -20,10 +21,13 @@ h1{
     justify-content: space-evenly;
     text-justify: distribute;
 }
+li{
+    text-align: justify;
+}
 .sub-titulo{
     width: 90%;
     display: flex;
-    justify-content: space-evenly;
+    text-align: justify;
     margin: auto;
 }
 p{
